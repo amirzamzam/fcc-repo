@@ -37,7 +37,7 @@ app.get('/dateValues/:dateVal', function(req,res,next){
   naturalDate = naturalDate.toLocaleDateString("en-us", dateFormattingOptions);    
   }
   
-  res.json({unix: unixDate, natural: naturalDate});
+res.json({unix: unixDate, natural: naturalDate});
 
   
   
