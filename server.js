@@ -11,7 +11,11 @@ var app = module.exports = express();
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get('/dateValues', function(req,res,next){
 
+  
+  
+});
 
 app.listen(8080, function(){
 
