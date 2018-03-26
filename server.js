@@ -16,10 +16,17 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/dateValues', function(req,res,next){
-
-console.log("It Works");
+app.get('/dateValues/:dateVal', function(req,res,next){
+  //takes in request data
+  var dateVal = req.params.dateVal;
   
+  var dateFormattingOptions = {
+  year: 'numeric',
+  month: 'long',
+  date: 'numeric'
+  };
+  
+  if(isNaN(dateVal))
 });
 
 
