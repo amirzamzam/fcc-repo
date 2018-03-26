@@ -2,11 +2,19 @@
 // where your node app starts
 
 // init project
-const express = require('express')
-const bodyParser = require('body-parser')
-const cors = require('cors')
+var express = require('express')
+var bodyParser = require('body-parser')
+var cors = require('cors')
 
 
 var app = module.exports = express();
-app.user(bodyParser.json());
+app.use(bodyParser.json());
 app.use(cors());
+
+
+
+app.listen(3000, function(){
+
+console.log("Working");  
+  
+});
